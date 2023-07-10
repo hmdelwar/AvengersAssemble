@@ -1,0 +1,192 @@
+<!--Made by Andy and Adam!!! -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Avengers HQ | CSE 389 Final Project</title>
+	<style type = "text/css">
+		body {
+			background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			background-size: cover;
+  			margin: 0;
+ 		}
+		.back1 {
+			background-image: url("images/images_Homepage/background.png");
+ 		}
+		.back2 {
+			background-image: url("images/images_Homepage/w2.jpg");
+ 		}
+		.back3 {
+			background-image: url("images/images_Homepage/w3.jpg");
+ 		}
+		#wrapper {
+			height: 100%;
+			width: 100%;
+  			position: relative;
+		}
+
+		#shadow-container {
+  			background-color: #000;
+  			position: absolute;
+  			width: 100%;
+  			height: 935px;
+  			opacity: 0.8;
+  			text-align: left;
+		}
+
+		#content {
+  			padding: 10px 10px;
+		}
+
+		.clock {
+			position: absolute;
+			top: 25%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #f0f0f0;
+			font-family: Tahoma, Geneva, sans-serif;
+			font-size: 180px;
+			text-shadow: 3px 3px skyblue;
+			padding: 0px 5px;
+		}
+
+		.container {
+  			position: relative;
+			width: 100%;
+			max-width: 400px;
+		}
+
+		.image {
+  			display: block;
+  			width: 100%;
+  			height: auto;
+		}
+
+		.overlay {
+ 			position: absolute;
+  			top: 0;
+  			bottom: 0;
+  			left: 0;
+  			right: 0;
+  			height: 100%;
+  			width: 100%;
+  			transition: .3s ease;
+  			opacity: 0%;
+  			background-color: black;
+		}
+
+		.container:hover .overlay {
+  			opacity: 1;
+		}
+
+	</style>
+	</head>
+	<body>
+<!This script is by Hossain. It changes the background every minute.>
+<script>
+    setInterval(change_background, 1000);
+
+    function change_background() {
+      var d = new Date();
+      var n = d.getMinutes();
+      console.log(n);
+      if ((n%3) == 0) {
+        document.body.className = "back1";
+      } 
+      else if((n%3) == 1){
+        document.body.className = "back2";
+      }
+      else{
+        document.body.className = "back3";
+      }
+      console.log("test");
+    }
+
+    change_background();
+</script>
+		<div id="wrapper">
+			<div id="shadow-container">
+				<div id="content">
+					<div id="DigitalClock" class="clock"></div>
+					<script type="text/javascript">
+
+					function displayTime(){
+						var date = new Date();
+						var hours = date.getHours();
+						var minutes = date.getMinutes();
+						var seconds = date.getSeconds();
+						var timeOfDay = "AM";
+
+						if(hours == 0){
+							h = 12;
+						}
+
+						if(hours > 12){
+							hours = hours - 12;
+							timeOfDay = "PM"
+						}
+
+						minutes = (minutes < 10) ? "0" + minutes : minutes;
+						seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+						var time = hours + ":" + minutes + ":" + seconds + " " + timeOfDay;
+						document.getElementById("DigitalClock").innerText = time;
+						document.getElementById("DigitalClock").textContent = time;
+
+						setTimeout(displayTime, 1000);
+					}
+
+					displayTime();
+					</script>
+					<div class="container">
+  						<img src="images/images_Homepage/cap_1.png" alt="Captain America" class="image" style="position:absolute; width:200px;height:200px; top:400px; left:560px;">
+  						<a href="Avengers/CaptainAmerica/captainamerica.html"> <img src="images/images_Homepage/cap2.png" class="overlay" style="position:absolute; width:200px;height:200px; top:400px; left:560px;"></a>
+					</div>
+
+					<div class="container">
+  						<img src="images/images_Homepage/iron_1.png" alt="Iron Man" class="image" style="position:absolute; width:200px;height:200px; top:400px; left:860px;">
+  						<a href="Avengers/IronMan/ironman.php"> <img src="images/images_Homepage/iron2.png" class="overlay" style="position:absolute; width:200px;height:200px; top:400px; left:860px;"></a>
+					</div>
+
+					<div class="container">
+  						<img src="images/images_Homepage/thor_1.png" alt="Thor" class="image" style="position:absolute; width:200px;height:200px; top:400px; left:1160px;">
+  						<a href="Avengers/Thor/Thor.html"> <img src="images/images_Homepage/thor2.png" class="overlay" style="position:absolute; width:200px;height:200px; top:400px; left:1160px;"></a>
+					</div>
+
+    				<div class="container">
+  						<img src="images/images_Homepage/hulk1.png" alt="Hulk" class="image" style="position:absolute; width:200px;height:200px; top:650px; left: 560px;">
+  						<a href="Avengers/Hulk/HulkPage.html"> <img src="images/images_Homepage/hulk2.png" class="overlay" style="position:absolute; width:200px;height:200px; top:650px; left: 560px;"></a>
+					</div>
+		
+					<div class="container">
+  						<img src="images/images_Homepage/bw_1.png" alt="Black Widow" class="image" style="position:absolute; width:200px;height:200px; top:650px; left: 860px;">
+  						<a href="Avengers/BlackWidow/bw.html"> <img src="images/images_Homepage/bw2.png" class="overlay" style="position:absolute; width:200px;height:200px; top:650px; left: 860px;"></a>
+					</div>
+
+					<div class="container">
+  						<img src="images/images_Homepage/he_1.webp" alt="Hawkeye" class="image" style="position:absolute; width:200px;height:200px; top:650px; left: 1160px;">
+  						<a href="Avengers/Hawkeye/Hawkeye.html"> <img src="images/images_Homepage/he2.png" class="overlay" 	style="position:absolute; width:200px; height:200px; top:650px; left: 1160px;"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Plays a sound when the website is loaded -->
+		<body>
+		<audio id="my_audio" src="sounds/sounds_Homepage/jarvisA.mp3"></audio>
+		</body>
+		<script>
+		window.onload = function() {
+    	document.getElementById("my_audio").play();
+		}
+
+		</script>
+	</body>
+</html>

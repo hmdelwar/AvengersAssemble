@@ -1,0 +1,136 @@
+<!-- Content will go here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<title>Thor: Strongest Avenger</title>
+</head>
+<body>
+
+<!-- Background image -->
+<head>
+<style>
+body {
+  background-image: url('../../images/images_Thor/thor-background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation tabs -->
+<nav class="w3-bar w3-black">
+  <a href="../../homepage.html" class="w3-button w3-bar-item">Home</a>
+  <a href="../../Avengers/IronMan/ironman.php" class="w3-button w3-bar-item">Iron Man</a>
+  <a href="../../Avengers/CaptainAmerica/captainamerica.html" class="w3-button w3-bar-item">Captain America</a>
+  <a href="../../Avengers/Hulk/HulkPage.html" class="w3-button w3-bar-item">Hulk</a>
+  <a href="../../Avengers/Hawkeye/Hawkeye.html" class="w3-button w3-bar-item">Hawkeye</a>
+  <a href="../../Avengers/BlackWidow/bw.html" class="w3-button w3-bar-item">Black Widow</a>
+</nav>
+
+<!-- Class to right indent -->
+<head>
+<style>
+.right {
+  float: right;
+  width: 500px;
+
+  padding: 50px;
+}
+</style>
+</head>
+<body>
+
+<!-- Class for different fonts -->
+<head>
+<style>
+p.a {
+  font-family: "Lucida Console", Monaco, monospace;
+}
+h1.b {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+</style>
+</head>
+
+<!-- Heading and Thor's quick bio -->
+<div class="right">
+<h1 class="b" style="color:Red;">Thor Odinson</h1>
+
+  <p class="a" style="color:White">Thor Odinson is a fictional character portrayed by Chris Hemsworth in the Marvel Cinematic Universe. Thor's parents are Frigga and Odin. Who are both currently deceased, Frigga was slain by Algrim during the Dark Elves' raid on Asgard. Odin's death is quite unclear in the MCU, however fans speculate Odin passed away from being exiled from Asgard by the hands of Loki. During Odin's exile, Odin's power slowly faded and eventually disintegrated into pure energy and entered Valhalla. Thor's adopted brother Loki, was slain by Thanos, however during the Avengers Time Heist in the movie Avenger Endgame, Loki managed to escape during a period of time where he was captured. This leads the fans to think Loki's future has also changed, meaning Loki could have possibly survived. Thor then found out he had a older sister, who was hell bent on ruling Asgard and taking over the 9 relms. During his battle with Hela, Thor's beloved hammer mjolnir was destroyed, which caused Thor an identity crisis. Thor soon realized he was the god of thunder and defeated Hela, with the help of Surtur. Thor's whole world fell apart, his home Asgard exploded into peices, and his entire family dead or presumed dead. Thor is now traveling the galaxy with The Guardian's of the Galaxy. </p>
+ <br>
+ <br>
+ <br>
+ <br>
+</div>
+</body>
+</html>
+
+
+<!-- Adding the YouTube Clip -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+<div class="right">
+<body>
+
+<iframe width="1000" height="630" src="https://www.youtube.com/embed/Ip6YwpLcIjI?start=40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</div>
+
+
+<!-- Slide show of thor's family -->
+<section>
+<div class="right">
+	<style>
+	img {
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+	</style>
+
+	<img class="mySlides" src="../../images/images_Thor/odin.jpeg" style="width:249%">
+  	<img class="mySlides" src="../../images/images_Thor/../../images/images_Thor/../../images/images_Thor/frigga.jpeg" style="width:249%">
+  	<img class="mySlides" src="../../images/images_Thor/../../images/images_Thor/loki.jpeg" style="width:249%">
+  	<img class="mySlides" src="../../images/images_Thor/hela.jpeg" style="width:249%">
+</div>
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+<!-- Plays a sound when the website is loaded -->
+<body>
+<audio id="my_audio" src="../../sounds/sounds_Thor/thunder.mp3"></audio>
+</body>
+<script>
+window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
+
+
+
+</body>
+</html>

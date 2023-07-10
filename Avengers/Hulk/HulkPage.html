@@ -1,0 +1,102 @@
+<!-- Content will go here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<title>Hulk: Bruce Banner</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-green">
+  <a href="../../homepage.html" class="w3-button w3-bar-item">Home</a>
+  <a href="../../Avengers/IronMan/ironman.php" class="w3-button w3-bar-item">Iron Man</a>
+  <a href="../../Avengers/CaptainAmerica/captainamerica.html" class="w3-button w3-bar-item">Captain America</a>
+  <a href="../../Avengers/Thor/Thor.html" class="w3-button w3-bar-item">Thor</a>
+  <a href="../../Avengers/Hawkeye/Hawkeye.html" class="w3-button w3-bar-item">Hawkeye</a>
+  <a href="../../Avengers/BlackWidow/bw.html" class="w3-button w3-bar-item">Black Widow</a>
+</nav>
+
+<!-- Slide Show -->
+<section class="w3-container w3-center w3-content w3-light-green" style="max-width:100%">
+
+	<style>
+	img {
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+	</style>
+
+	<img class="mySlides" src="../../images/images_Hulk/Hulk2.jpg"
+	style="width:80%">
+  	<img class="mySlides" src="../../images/images_Hulk/Hulk3.jpg"
+  	style="width:80%">
+  	<img class="mySlides" src="../../images/images_Hulk/Hulk4.jpeg"
+  	style="width:80%">
+  	<img class="mySlides" src="../../images/images_Hulk/Hulk5.jpg"
+  	style="width:80%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content w3-light-green" style="max-width:100%">
+  <h2 class="w3-wide">HULK</h2>
+  <p class="w3-opacity"><i>Bruce Banner</i></p>
+  <p class="w3-center">Following his accidental exposure to gamma rays saving the life of Rick Jones during the detonation of an experimental bomb, Banner is physically transformed into the Hulk when subjected to emotional stress, at or against his will, often leading to destructive rampages and conflicts that complicate Banner's civilian life. The Hulk's level of strength is normally conveyed as proportionate to his level of anger. Commonly portrayed as a raging savage, the Hulk has been represented with other personalities based on Banner's fractured psyche, from a mindless, destructive force, to a brilliant warrior, or genius scientist in his own right.  </p>
+</section>
+
+<section class="w3-container w3-center w3-content w3-black" style="max-width:100%">
+  <h2 class="w3-wide">POWERS AND ABILITIES</h2>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-green">
+  <article class="w3-third">
+    <h3>SUPERHUMAN STRENGTH</p>
+    <img src="../../images/images_Hulk/HulkStrong.jpg" alt="Random Name" style="width:100%">
+    <p>The Hulk’s strength is immense, allowing him to stop foes even bigger than he is with a single blow, to throw massively heavy objects, and to tear apart metal as though it were paper.</p>
+  </article>
+  <article class="w3-third">
+    <h3>HULK SMASH!</p>
+    <img src="../../images/images_Hulk/HulkClap.gif" alt="Random Name" style="width:100%">
+    <p>Slamming his hands together, the Hulk can create a massive concussive wave.</p>
+  </article>
+  <article class="w3-third">
+    <h3>DURABILITY AND REGENERATION</p>
+    <img src="../../images/images_Hulk/HulkResiliant.jpg" alt="Random Name" style="width:100%">
+    <p>The Hulk’s skin is able to withstand a tremendous amount of injury and he is able to heal far quicker than a normal human when harmed.</p>
+  </article>
+</section>
+
+<audio controls>
+  <source src="../../sounds/sounds_Hulk/smash.mp3" type="audio/ogg">
+  <source src="../../sounds/sounds_Hulk/smash.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 5000);
+}
+</script>
+
+
+
+
+	
+</body>
+</html>

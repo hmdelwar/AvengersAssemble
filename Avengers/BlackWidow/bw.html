@@ -1,0 +1,228 @@
+<!Template from Adam's Captain America>
+<!Written by Hossain Delwar>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<title>Black Widow</title>
+<style>
+header{
+  text-align: center;
+  font-size: 30px;
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 25px;
+  max-width: 100%;
+  height: 177;
+  background-color: #000000;
+}
+
+img {
+  float: Center;
+}
+
+footer{
+  margin-left: 66%;
+  margin-top: 85%;
+}
+
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#textbox {
+  margin-top:20px;
+  background-color: #F0F0F0;
+  position: absolute;
+  width: 100%;
+  height: 1400px;
+  opacity: 0.8;
+  text-align: left;
+  border: 2px #F0F0F0;
+  border-radius: 25px;
+  color: black;
+}
+
+#content {
+  padding: 40px 30px;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  
+}
+p.maincontent {
+  margin: 0px 50px;
+  max-width: 700px;
+}
+
+.back1 {
+  background-image: url('../../images/images_BlackWidow/179109.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+    
+.back2 {
+  background-image: url('../../images/images_BlackWidow/bg2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<!a java script for changing background which changes every minute>
+<script>
+    setInterval(change_background, 1000); 
+
+    function change_background() {
+      var d = new Date();
+      var n = d.getMinutes();
+      console.log(n);
+      if ((n%2) == 0) {
+        document.body.className = "back1";
+      } else {
+        document.body.className = "back2";
+      }
+      console.log("test");
+    }
+
+    change_background();
+</script>
+
+<!Navigation bar in alphabetical order>
+<nav class="w3-bar w3-red">
+  <a href="../../homepage.html" class="w3-button w3-bar-item">Home</a>
+  <a href="../../Avengers/CaptainAmerica/captainamerica.html" class="w3-button w3-bar-item">Captain America</a>
+  <a href="../../Avengers/Hawkeye/Hawkeye.html" class="w3-button w3-bar-item">Hawkeye</a>
+  <a href="../../Avengers/Hulk/HulkPage.html" class="w3-button w3-bar-item">Hulk</a>
+  <a href="../../Avengers/IronMan/ironman.php" class="w3-button w3-bar-item">Iron Man</a>
+  <a href="../../Avengers/Thor/Thor.html" class="w3-button w3-bar-item">Thor</a>
+</nav>
+<!Header contains the title page but also a trivia question>
+<header>
+    <img id="quiz0" src="../../images/images_BlackWidow/BW logo.jpg" width="auto" height="177" onclick="quiz(0)">
+</header>
+
+<div id="wrapper">
+  <div id="textbox">
+    <div id="content">
+<!I used a table as an inspiration from the marvel fandom website to have quick facts>
+<table style="position: absolute; width: 350px; height: auto; top: 30px; left: 885px;" >
+  <tr>
+    <th>Black Widow</th>
+  </tr>
+  <tr>
+    <td>
+<img id="quiz1" src="../../images/images_BlackWidow/mainpic.jpg" width="375" height="auto" onclick="quiz(1)">
+</td>
+  </tr>
+  <tr>
+<tr>
+    <td><b>Play the Trivia!</b>
+    <blockquote>Click on Each For a Q&A</blockquote></td>
+  </tr>
+    <td><b>Real Name:</b>
+    <blockquote>Natalia Alianova Romonaff</blockquote></td>
+  </tr>
+  <tr>
+    <td><b>Alias:</b>
+    <blockquote>Black Widow, Natasha Romonaff</blockquote></td>
+  </tr>
+  <tr>
+    <td><b>Date of Birth:</b>
+    <blockquote>November 22, 1984</blockquote></td>
+  </tr>
+  <tr>
+    <td><b>Location of Birth:</b>
+    <blockquote>Stalingrad</blockquote></td>
+  </tr>
+  <tr>
+    <td><b>First Comic Book Appearance: </b>
+    <blockquote>Tales of Suspense #52</blockquote></td>
+  </tr>
+  <tr>
+    <td><b>First Movie Appearance:</b>
+    <blockquote>Iron Man 2</blockquote></td>
+  </tr>
+  <tr>
+    <td><b>Portrayed By:</b>
+    <blockquote> Scarlett Johansson</blockquote></td>
+  </tr>
+</table>
+<!a bit of a bio for black widow followed by some images and the trailer for her new movie>
+      <p class="maincontent">Black Widow, otherwise known as Natasha Romanoff, is an essential character in the Marvel Cinematic universe. However, her fame in comic book did not grow until the 1970s. She first appeared in April 1964 on Tales of Suspense #52. She later started to reappear in more comics in the 70’s, mostly associated with SHIELD. Black Widow was born in Stalingrad. It has been rumored that she is the last member of the Czars, but it has yet to be proven. At an early age, she was injected with the super-soldier serum and went through harsh training by the Black Widow ops Program of the now non-existent nation of Soviet Russia. The program was the nation’s way against the US in the Cold War but also a program to show the Soviets can create super-soldiers like Captain Rogers. She later joins the KGB where she was dubbed “Black Widow”. Later on, Nick Fury invites her to join SHIELD where she becomes a huge supportive character in the comics inspiring her character to come to life in the MCU.</p>
+      <iframe style="position: absolute; top: 950px; left: 65px;" width="700" height="393.75" src="https://www.youtube.com/embed/RxAtuMu_ph4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p class="maincontent">Black Widow first appeared in Iron Man 2, where she was hired as an assistant. She was later introduced by Nick Fury as Shield agent to Tony Stark. She aided Stark in taking down Ivan Vanko. She later joins the Avenger in the “The Avengers” as one of the first members along with Thor, Iron Man, Hawkeye, The Hulk and Captain America. Later on, she goes on an adventure with Captain America in “Captain America The Winter Soldier” where she help the First Avenger in tackling Hydra who have been hidden within Shield before tackling the arising issue of Ultron and Thanos in the following Avengers movies. </p>
+      <p class="maincontent">Black Widow is a hand to hand combatant who is also very skilled with weapons such as guns and poles. She is believed to be able to be pick up Mjolnir which is slightly teased in the comics but proven in the comics making her a Goddess of Thunder. Her body is enhanced due to the super-soldier serum which allows her to perform at exceptional peak human strength, durability, energy and intelligence.</p>
+      <img id="quiz2" onclick="quiz(2)" style="position: absolute; width: 220px; height: auto; top: 590px; left: 65px;" src="../../images/images_BlackWidow/bw1.jpg">
+      <img id="quiz3" style="position: absolute; width: 228.25px; height: auto; top: 590px; left: 300.875px;" onclick="quiz(3)" src="../../images/images_BlackWidow/bw2.jpg">
+      <img id="quiz4" style="position: absolute; width: 220px; height: auto; top: 590px; left:545px;" src="../../images/images_BlackWidow/bw3.jpg" onclick="quiz(4)">
+	<div id="videoembed">
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!this script is for the trivia quiz, each image has a id assaigned and so when they are clicked, a question is asked and clicking on the question would reveal the answer. and to hide the answer, the user needs to click on the image again to start over>
+<script>
+
+var quiz0pics = [
+	'../../images/images_BlackWidow/BW logo.jpg', 
+	'../../images/images_BlackWidow/BW logo1.jpg', 
+	'../../images/images_BlackWidow/BW logo2.jpg', 
+];
+var quiz1pics = [
+	'../../images/images_BlackWidow/mainpic.jpg', 
+	'../../images/images_BlackWidow/mainpic1.jpg', 
+	'../../images/images_BlackWidow/mainpic2.jpg', 
+];
+var quiz2pics = [
+	'../../images/images_BlackWidow/bw1.jpg', 
+	'../../images/images_BlackWidow/bw11.jpg', 
+	'../../images/images_BlackWidow/bw12.jpg', 
+];
+var quiz3pics = [
+	'../../images/images_BlackWidow/bw2.jpg', 
+	'../../images/images_BlackWidow/bw21.jpg', 
+	'../../images/images_BlackWidow/bw22.jpg', 
+];
+var quiz4pics = [
+	'../../images/images_BlackWidow/bw3.jpg', 
+	'../../images/images_BlackWidow/bw31.jpg', 
+	'../../images/images_BlackWidow/bw32.jpg', 
+];
+var num = 1;
+var num2 = 1;
+var num3 = 1;
+var num4 = 1;
+var num5 = 1;
+
+function quiz(number) {
+var x = document.getElementsByTagName("IMG")[number];
+if (number === 0){
+x.src = quiz0pics[num++ % quiz0pics.length];}
+else if (number === 1){
+x.src = quiz1pics[num2++ % quiz1pics.length];}
+else if (number === 2){
+x.src = quiz2pics[num3++ % quiz2pics.length];}
+else if (number === 3){
+x.src = quiz3pics[num4++ % quiz3pics.length];}
+else if (number === 4){
+x.src = quiz4pics[num5++ % quiz4pics.length];}  
+}
+</script>
+
+<footer>
+  <audio controls autoplay>
+    <source src="../../sounds/sounds_BlackWidow/bw.mp3" type="audio/mpeg">
+  </audio>
+</footer>
+</body>
